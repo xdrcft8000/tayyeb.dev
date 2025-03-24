@@ -1,0 +1,82 @@
+{
+    "sections": [
+        {
+            "id": "live-projects",
+            "title": "Live Projects",
+            "content": [
+                {
+                    "title": "beautifulqr.co",
+                    "description": "A simple and beautiful QR code generator",
+                    "link": "https://beautifulqr.co",
+                    "image": "images/beautifulqr.webp",
+                    "technology": [
+                        {
+                            "name": "React",
+                            "link": "https://reactjs.org/"
+                        },
+                        {
+                            "name": "Node.js",
+                            "link": "https://nodejs.org/"
+                        },
+                        {
+                            "name": "Express",
+                            "link": "https://expressjs.com/"
+                        }
+                    ] 
+                },
+                {
+                    "title": "Finding Time",
+                    "description": "A simple and beautiful time tracking app",
+                    "link": "https://findingtime.app",
+                    "image": "images/findingtime.webp",
+                    "technology": [
+                        {
+                            "name": "React Native",
+                            "link": "https://reactnative.dev/"
+                        },
+                        {
+                            "name": "Firebase",
+                            "link": "https://firebase.google.com/"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "open-source-contributions",
+            "title": "Open-Source Contributions",
+            "content": [
+                {
+                    "title": "Project 1",
+                    "description": "Description of Project 1",
+                    "link": "https://example.com/project1",
+                    "image": "https://example.com/project1.png",
+                    "technology": [
+                        {
+                            "name": "React",
+                            "link": "https://reactjs.org/"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "archive",
+            "title": "Archive",
+            "content": [
+                {
+                    "title": "Project 1",
+                    "description": "Description of Project 1",
+                    "link": "https://example.com/project1",
+                    "image": "https://example.com/project1.png",
+                    "technology": [
+                        {
+                            "name": "React",
+                            "link": "https://reactjs.org/"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

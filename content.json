@@ -65,9 +65,17 @@
                     "image": "images/adaicons.webp",
                     "technology": [
                         {
-                            "name": "React",
-                            "link": "https://reactjs.org/"
-                        }
+                            "name": "Node.js",
+                            "link": "https://nodejs.org/"
+                        },
+                        {
+                            "name": "JavaScript",
+                            "link": "https://www.javascript.com/"
+                        },
+                        {
+                            "name": "Figma",
+                            "link": "https://www.figma.com/"
+                        }                            
                     ]
                 }
             ]
@@ -77,14 +85,62 @@
             "title": "Archive",
             "content": [
                 {
-                    "title": "Project 1",
-                    "description": "Description of Project 1",
+                    "title": "Finding Peace Again",
+                    "description": "To help medical volunteers disseminate information to refugees, I created a GenAI chatbot accessible over WhatsApp integrated with the Google Drive API. ",
                     "link": "https://example.com/project1",
                     "image": "https://example.com/project1.png",
                     "technology": [
                         {
-                            "name": "React",
-                            "link": "https://reactjs.org/"
+                            "name": "python",
+                            "link": "https://www.python.org/"
+                        },
+                        {
+                            "name": "FastAPI",
+                            "link": "https://fastapi.tiangolo.com/"
+                        },
+                        {
+                            "name": "LangChain",
+                            "link": "https://www.langchain.com/"
+                        },
+                        {
+                            "name": "render",
+                            "link": "https://render.com/"
+                        },
+                        {
+                            "name": "supabase",
+                            "link": "https://supabase.com/"
+                        }
+                    ]
+                },
+                {
+                    "title": "Moodulate",
+                    "description": "Working with a child psychotherapist I built a PoC app that was pitched to an NHS trust. It helped deliver mental health questionnaires over WhatsApp and draw insights from the data. ",
+                    "link": "",
+                    "image": "https://example.com/project1.png",
+                    "technology": [
+                        {
+                            "name": "python",
+                            "link": "https://www.python.org/"
+                        },
+                        {
+                            "name": "FastAPI",
+                            "link": "https://fastapi.tiangolo.com/"
+                        },
+                        {   
+                            "name": "SvelteKit",
+                            "link": "https://svelte.dev/"
+                        },
+                        {
+                            "name": "LangChain",
+                            "link": "https://www.langchain.com/"
+                        },
+                        {
+                            "name": "render",
+                            "link": "https://render.com/"
+                        },
+                        {
+                            "name": "supabase",
+                            "link": "https://supabase.com/"
                         }
                     ]
                 }

@@ -24,16 +24,16 @@ async function loadContent() {
             titleContainer.onclick = () => expandSection(section.id);
             sectionElement.appendChild(titleContainer);
             
-            //arrow
-            const sectionArrow = document.createElement('h2');
-            sectionArrow.className = 'section-title-arrow';
-            sectionArrow.textContent = '→';
-            titleContainer.appendChild(sectionArrow);
             //title
             const sectionTitle = document.createElement('h2');
             sectionTitle.textContent = section.title;
             titleContainer.appendChild(sectionTitle);
             
+            //arrow
+            const sectionArrow = document.createElement('h2');
+            sectionArrow.className = 'section-title-arrow';
+            sectionArrow.textContent = '→';
+            titleContainer.appendChild(sectionArrow);
             
             //section container for content
             const sectionContainer = document.createElement('div');

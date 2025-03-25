@@ -6,29 +6,41 @@
             "content": [
                 {
                     "title": "beautifulqr.co",
-                    "description": "A simple and beautiful QR code generator",
+                    "description": "QR codes don't need to be so ugly. beautifulqr.co is a SaaS product that aims to make AI qr codes accessible to everyone.",
                     "link": "https://beautifulqr.co",
                     "image": "images/beautifulqr.webp",
                     "technology": [
                         {
-                            "name": "React",
-                            "link": "https://reactjs.org/"
+                            "name": "NEXT.js",
+                            "link": "https://nextjs.org/"
                         },
                         {
-                            "name": "Node.js",
-                            "link": "https://nodejs.org/"
+                            "name": "Tailwind CSS",
+                            "link": "https://tailwindcss.com/"
                         },
                         {
-                            "name": "Express",
-                            "link": "https://expressjs.com/"
+                            "name": "python",
+                            "link": "https://www.python.org/"
+                        },
+                        {
+                            "name": "Vercel",
+                            "link": "https://vercel.com/"
+                        },
+                        {
+                            "name": "supabase",
+                            "link": "https://supabase.com/"
+                        },
+                        {
+                            "name": "Stable Diffusion",
+                            "link": "https://stabilityai.com/stable-diffusion"
                         }
                     ] 
                 },
                 {
                     "title": "Finding Time",
-                    "description": "A simple and beautiful time tracking app",
-                    "link": "https://findingtime.app",
-                    "image": "images/findingtime.webp",
+                    "description": "On the Apple Store with 200+ downloads: Finding Time is a free tool to help groups find the best weekly time outside of work and between different timezones.",
+                    "link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://apps.apple.com/us/app/finding-time/id6480136277&ved=2ahUKEwjCwY2q3KSMAxWVZ0EAHaT3Ai0QFnoECBYQAQ&usg=AOvVaw0rlRIALSr1BgEHKekYTGzi",
+                    "image": "images/findingtime2.webp",
                     "technology": [
                         {
                             "name": "React Native",

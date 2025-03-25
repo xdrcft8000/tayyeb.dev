@@ -149,6 +149,22 @@
                     ]
                 },
                 {
+                    "title": "nea",
+                    "description": "On the Apple Store with 250+ downloads: Nea is an app blocker for students that attempted to reverse dark UX patterns combined with the latest research in behaviour change design to enforce good study habits.",
+                    "link": "https://apps.apple.com/gb/app/nea/id6446169698",
+                    "image": "images/nea.webp",
+                    "technology": [
+                        {
+                            "name": "React Native",
+                            "link": "https://reactnative.dev/"
+                        },
+                        {
+                            "name": "Firebase",
+                            "link": "https://firebase.google.com/"
+                        }                        
+                    ]
+                },
+                {
                     "title": "heavystuf",
                     "description": "'AI can be a force for good', the message of hope working through the designs on e-commerce T-Shirt project. It was build in pure js with minimal styling and no libraries or frameworks to show the beauty of raw technology. To encourage users to use the site conciously, common UX patterns were intentionally subverted in thoughtful ways",
                     "link": "",

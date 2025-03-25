@@ -62,7 +62,7 @@
                     "title": "adaicons",
                     "description": "A modern and mature icon pack inspired by MS copilot with a focus on data and AI.",
                     "link": "https://www.npmjs.com/package/adaicons",
-                    "image": "images/adaicons.webp",
+                    "image": "images/noimage.webp",
                     "technology": [
                         {
                             "name": "Node.js",
@@ -88,7 +88,7 @@
                     "title": "Finding Peace Again",
                     "description": "To help medical volunteers disseminate information to refugees, I created a GenAI chatbot accessible over WhatsApp integrated with the Google Drive API. ",
                     "link": "https://example.com/project1",
-                    "image": "https://example.com/project1.png",
+                    "image": "images/noimage.webp",
                     "technology": [
                         {
                             "name": "python",
@@ -116,7 +116,7 @@
                     "title": "Moodulate",
                     "description": "Working with a child psychotherapist I built a PoC app that was pitched to an NHS trust. It helped deliver mental health questionnaires over WhatsApp and draw insights from the data. ",
                     "link": "",
-                    "image": "https://example.com/project1.png",
+                    "image": "images/noimage.webp",
                     "technology": [
                         {
                             "name": "python",

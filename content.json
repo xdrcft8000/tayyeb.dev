@@ -39,7 +39,7 @@
                 {
                     "title": "Finding Time",
                     "description": "On the Apple Store with 200+ downloads: Finding Time is a free tool to help groups find the best weekly time outside of work and between different timezones.",
-                    "link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://apps.apple.com/us/app/finding-time/id6480136277&ved=2ahUKEwjCwY2q3KSMAxWVZ0EAHaT3Ai0QFnoECBYQAQ&usg=AOvVaw0rlRIALSr1BgEHKekYTGzi",
+                    "link": "https://apps.apple.com/us/app/finding-time/id6480136277",
                     "image": "images/findingtime2.webp",
                     "technology": [
                         {
@@ -59,10 +59,10 @@
             "title": "Open-Source Contributions",
             "content": [
                 {
-                    "title": "Project 1",
-                    "description": "Description of Project 1",
-                    "link": "https://example.com/project1",
-                    "image": "https://example.com/project1.png",
+                    "title": "adaicons",
+                    "description": "A modern and mature icon pack inspired by MS copilot with a focus on data and AI.",
+                    "link": "https://www.npmjs.com/package/adaicons",
+                    "image": "images/adaicons.webp",
                     "technology": [
                         {
                             "name": "React",

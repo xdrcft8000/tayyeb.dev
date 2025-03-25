@@ -246,7 +246,7 @@ p {
 .item-image {
     width: 150px;
     height: 150px;
-    border-radius: var(--border-radius);
+    border-radius: var(--image-border-radius);
     object-fit: cover;
 }
 

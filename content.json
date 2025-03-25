@@ -44,7 +44,7 @@
                     "title": "Finding Time",
                     "description": "On the Apple Store with 200+ downloads: Finding Time is a free tool to help groups find the best weekly time outside of work and between different timezones.",
                     "link": "https://apps.apple.com/us/app/finding-time/id6480136277",
-                    "image": "images/findingtime2.webp",
+                    "image": "images/findingtime.webp",
                     "technology": [
                         {
                             "name": "React Native",
@@ -166,7 +166,7 @@
                 },
                 {
                     "title": "heavystuf",
-                    "description": "'AI can be a force for good', the message of hope working through the designs on e-commerce T-Shirt project. It was build in pure js with minimal styling and no libraries or frameworks to show the beauty of raw technology. To encourage users to use the site conciously, common UX patterns were intentionally subverted in thoughtful ways",
+                    "description": "'AI can be a force for good', the message of hope working through the designs on e-commerce T-Shirt project. It was build in pure js with minimal styling and no libraries or frameworks to show the beauty of raw technology. To encourage users to use the site consciously, common UX patterns were intentionally subverted in thoughtful ways.",
                     "link": "",
                     "image": "images/heavystuf.webp",
                     "technology": [

@@ -32,6 +32,16 @@
 
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -43,6 +53,7 @@ body {
     max-width: 1080px;
     margin: 0 auto;
     background-color: var(--dark-grey);
+
 }
 
 header {
@@ -129,7 +140,9 @@ p {
 }
 
 
-
+.fade-in {
+    animation: fadeIn 1s ease;
+}
 
 
 .section-title-container {

@@ -17,7 +17,7 @@ async function loadContent() {
             //section element
             const sectionElement = document.createElement('section');
             sectionElement.id = section.id;
-            
+            sectionElement.classList.add('fade-in');
             //title container
             const titleContainer = document.createElement('div');
             titleContainer.className = 'section-title-container';

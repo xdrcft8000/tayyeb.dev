@@ -252,6 +252,14 @@ p {
     padding: 20px;
 }
 
+.item-image-container:hover ~ .item-text-container .item-title {
+    text-shadow: var(--white-glow);
+}
+
+.item-image-container-inactive{
+    pointer-events: none;
+}
+
 .item-image {
     width: 150px;
     height: 150px;
@@ -279,6 +287,14 @@ p {
 
 .item-title:hover {
     text-shadow: var(--white-glow);
+}
+
+.item-title-link-inactive {
+    pointer-events: none;
+}
+
+.item-title-inactive: hover{
+    pointer-events: none;
 }
 
 .item-description {

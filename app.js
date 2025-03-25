@@ -46,13 +46,21 @@ async function loadContent() {
                 const itemContainer = document.createElement('div');
                 itemContainer.className = 'item-container';
                 sectionContainer.appendChild(itemContainer);
-        
+                
+
+                //item image container
+                const itemImageContainer = document.createElement('a');
+                itemImageContainer.className = 'item-image-container';
+                itemImageContainer.href = item.link;
+                itemImageContainer.target = '_blank';
+                itemContainer.appendChild(itemImageContainer);
+
                 //item image
                 const itemImage = document.createElement('img');
                 itemImage.src = item.image;
                 itemImage.alt = item.title;
                 itemImage.className = 'item-image';
-                itemContainer.appendChild(itemImage);
+                itemImageContainer.appendChild(itemImage);
         
                 //item text container
                 const itemTextContainer = document.createElement('div');
@@ -64,12 +72,19 @@ async function loadContent() {
                 itemTitleLink.href = item.link;
                 itemTitleLink.className = 'item-title-link';
                 itemTitleLink.target = '_blank';
-        
+
                 const itemTitle = document.createElement('h3');
                 itemTitle.className = 'item-title';
                 itemTitle.textContent = item.title;
                 itemTitleLink.appendChild(itemTitle);
                 itemTextContainer.appendChild(itemTitleLink);
+
+                if (item.link === "") {
+                    itemTitle.classList.add('item-title-inactive');
+                    itemTitleLink.classList.add('item-title-link-inactive');
+                    itemImageContainer.classList.remove('item-image-container');
+                    itemImageContainer.classList.add('item-image-container-inactive');
+                }
         
                 //item description
                 const itemDescription = document.createElement('p');

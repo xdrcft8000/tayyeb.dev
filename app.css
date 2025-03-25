@@ -175,22 +175,26 @@ p {
     text-shadow: var(--white-glow);
 }
 
-.section-title-container:hover svg {
+.section-title-container:hover .section-title-arrow {
     filter: drop-shadow(var(--white-glow));
+    opacity: 1;
 }
 
 
 
 .section-title-arrow {
+    opacity: 0;
     transition: all 0.3s ease !important;
 }
 
 .section-title-arrow.collapsed {
     transform: rotate(0deg);
+    opacity: 0;
 }
 
 .section-title-arrow.expanded {
-    transform: rotate(90deg)
+    transform: rotate(90deg);
+    opacity: 1;
 }
 
 

@@ -31,6 +31,10 @@
                             "link": "https://supabase.com/"
                         },
                         {
+                            "name": "Stripe",
+                            "link": "https://stripe.com/"
+                        },
+                        {
                             "name": "Stable Diffusion",
                             "link": "https://stabilityai.com/stable-diffusion"
                         }
@@ -116,7 +120,7 @@
                     "title": "Moodulate",
                     "description": "Working with a child psychotherapist I built a PoC app that was pitched to an NHS trust. It helped deliver mental health questionnaires over WhatsApp and draw insights from the data. ",
                     "link": "",
-                    "image": "images/noimage.webp",
+                    "image": "images/moodulate.webp",
                     "technology": [
                         {
                             "name": "python",
@@ -135,12 +139,40 @@
                             "link": "https://www.langchain.com/"
                         },
                         {
-                            "name": "render",
+                            "name": "Render",
                             "link": "https://render.com/"
                         },
                         {
                             "name": "supabase",
                             "link": "https://supabase.com/"
+                        }
+                    ]
+                },
+                {
+                    "title": "heavystuf",
+                    "description": "'AI can be a force for good', the message of hope working through the designs on e-commerce T-Shirt project. It was build in pure js with minimal styling and no libraries or frameworks to show the beauty of raw technology. To encourage users to use the site conciously, common UX patterns were intentionally subverted in thoughtful ways",
+                    "link": "",
+                    "image": "images/heavystuf.webp",
+                    "technology": [
+                        {
+                            "name": "javascript",
+                            "link": "https://www.javascript.com/"
+                        },
+                        {
+                            "name": "python",
+                            "link": "https://www.python.org/"
+                        },
+                        {
+                            "name": "django",
+                            "link": "https://www.djangoproject.com/"
+                        },
+                        {
+                            "name": "stripe",
+                            "link": "https://stripe.com/"
+                        },
+                        {
+                            "name": "heroku",
+                            "link": "https://www.heroku.com/"
                         }
                     ]
                 }

@@ -265,6 +265,10 @@ p {
 
 .item-image-container-inactive{
     pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .item-image {
@@ -289,13 +293,28 @@ p {
     display: flex;
     border-bottom: 1px solid var(--light-grey);
 }
+.item-title-link-icon {
+    margin: 10px 0px 0px 5px;
+    width: 20px;
+    height: 20px;
+    fill: var(--white);
+    color: var(--white);
+    transition: all 0.3s ease;
+
+}
 
 .item-title {
+    transition: all 0.3s ease;
 }
 
-.item-title:hover {
+.item-title-link:hover .item-title-link-icon {
+    filter: drop-shadow(var(--white-glow));
+}
+
+.item-title-link:hover .item-title {
     text-shadow: var(--white-glow);
 }
+
 
 .item-title-link-inactive {
     pointer-events: none;

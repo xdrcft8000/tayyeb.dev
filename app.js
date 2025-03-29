@@ -155,8 +155,12 @@ function collapseSection(sectionId) {
     });
 }
 
-
-
+function collapseAllSections() {
+    const sections = document.querySelectorAll('section');
+    sections.forEach(section => {
+        collapseSection(section.id);
+    });
+}
 
 // TODO implement virtual dom
 
@@ -211,12 +215,37 @@ function mount(vnode, container) {
     container.appendChild(render(vnode));
 }
 
+
+
+
+let resizeTimeout;
+let isMobile = window.innerWidth < 768;
+let lastWidth = window.innerWidth;
+
+
+
 // Example usage
 document.addEventListener('DOMContentLoaded', () => {
     console.log('DOM fully loaded and parsed');
     getContent().then(content => {
+        console.log('content loaded');
         loadContent(content);
+    
     });
+
+    let breakPoint = 768;
+    let lastWidth = window.innerWidth;
+    window.addEventListener('resize', () => {
+        clearTimeout(resizeTimeout);
+        const crossedBreakpoint = lastWidth < breakPoint && window.innerWidth >= breakPoint || lastWidth >= breakPoint && window.innerWidth < breakPoint;
+        lastWidth = window.innerWidth;
+        if (crossedBreakpoint) {
+            collapseAllSections();
+        }
+    });
+    
+    
+
     
     // Create a simple greeting element when button is clicked
     const button = document.createElement('button');

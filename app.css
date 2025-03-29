@@ -5,7 +5,6 @@
 
     /* Add Google Font Import */
     @import url('https://fonts.googleapis.com/css2?family=Handjet:wght@300;400;500;700&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap');
     /* Add Font Family Variable */
     --handjet-font: 'Handjet', sans-serif;
@@ -413,6 +412,7 @@ p {
         font-weight: 400;
     }
 
+    
     .section-title-container {
         cursor: pointer;
         display: flex;
@@ -428,6 +428,7 @@ p {
         flex-direction: row;
         gap: 10px;
         padding: 20px;
+        padding-bottom: 0px;
     }
 
     .item-title-link-icon {

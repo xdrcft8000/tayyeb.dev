@@ -44,7 +44,7 @@
                     "title": "Finding Time",
                     "description": "On the Apple Store with 200+ downloads: Finding Time is a free tool to help groups find the best weekly time outside of work and between different timezones.",
                     "link": "https://apps.apple.com/us/app/finding-time/id6480136277",
-                    "image": "images/findingtime.webp",
+                    "image": "images/findingtime2.webp",
                     "technology": [
                         {
                             "name": "React Native",
@@ -66,7 +66,7 @@
                     "title": "adaicons",
                     "description": "A modern and mature icon pack inspired by MS copilot with a focus on data and AI.",
                     "link": "https://www.npmjs.com/package/adaicons",
-                    "image": "images/adaicons.webp",
+                    "image": "images/adaicons2.webp",
                     "technology": [
                         {
                             "name": "Node.js",
@@ -92,7 +92,7 @@
                     "title": "Finding Peace Again",
                     "description": "To help medical volunteers disseminate information to refugees, I created a GenAI chatbot accessible over WhatsApp integrated with the Google Drive API. ",
                     "link": "",
-                    "image": "images/noimage.webp",
+                    "image": "images/noimage2.webp",
                     "technology": [
                         {
                             "name": "python",
@@ -120,7 +120,7 @@
                     "title": "Moodulate",
                     "description": "Working with a child psychotherapist I built a PoC app that was pitched to an NHS trust. It helped deliver mental health questionnaires over WhatsApp and draw insights from the data. ",
                     "link": "",
-                    "image": "images/moodulate.webp",
+                    "image": "images/moodulate2.webp",
                     "technology": [
                         {
                             "name": "python",
@@ -152,7 +152,7 @@
                     "title": "nea",
                     "description": "On the Apple Store with 250+ downloads: Nea is an app blocker for students that attempted to reverse dark UX patterns combined with the latest research in behaviour change design to enforce good study habits.",
                     "link": "https://apps.apple.com/gb/app/nea/id6446169698",
-                    "image": "images/nea.webp",
+                    "image": "images/nea2.webp",
                     "technology": [
                         {
                             "name": "React Native",
@@ -168,7 +168,7 @@
                     "title": "heavystuf",
                     "description": "'AI can be a force for good', the message of hope working through the designs on e-commerce T-Shirt project. It was build in pure js with minimal styling and no libraries or frameworks to show the beauty of raw technology. To encourage users to use the site consciously, common UX patterns were intentionally subverted in thoughtful ways.",
                     "link": "",
-                    "image": "images/heavystuf.webp",
+                    "image": "images/heavystuf2.webp",
                     "technology": [
                         {
                             "name": "javascript",

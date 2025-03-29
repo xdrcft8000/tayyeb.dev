@@ -125,18 +125,16 @@ async function expandSection(sectionId) {
     const sectionContainer = section.querySelector('.section-container');
     const titleContainer = section.querySelector('.section-title-container');
     const arrow = document.querySelector(`#${sectionId} .section-title-arrow`);
-    sectionContainer.classList.add('expanded');
-    sectionContainer.classList.remove('collapsed');
-    const numberOfChildren = sectionContainer.children.length;
-    const heightPerChild = 250; // Adjust this value based on your content height
-    sectionContainer.style.setProperty('--dynamic-height', `${numberOfChildren * heightPerChild}px`);
-    const heightPerChildMobile = 700;
-    sectionContainer.style.setProperty('--dynamic-height-mobile', `${numberOfChildren * heightPerChildMobile}px`);
-
-    titleContainer.classList.add('expanded');
-    titleContainer.classList.remove('collapsed');
-    arrow.classList.add('expanded');
-    arrow.classList.remove('collapsed');
+    const sectionHeight = sectionContainer.scrollHeight;
+    sectionContainer.style.setProperty('--section-height', `${sectionHeight}px`);
+    requestAnimationFrame(() => {
+        sectionContainer.classList.add('expanded');
+        sectionContainer.classList.remove('collapsed');    
+        titleContainer.classList.add('expanded');
+        titleContainer.classList.remove('collapsed');
+        arrow.classList.add('expanded');
+        arrow.classList.remove('collapsed');
+    });
     titleContainer.onclick = () => collapseSection(sectionId);
 }
 
@@ -145,16 +143,16 @@ function collapseSection(sectionId) {
     const sectionContainer = section.querySelector('.section-container');
     const titleContainer = section.querySelector('.section-title-container');
     const arrow = document.querySelector(`#${sectionId} .section-title-arrow`);
-    sectionContainer.classList.remove('expanded');
-    sectionContainer.classList.add('collapsed');
-    sectionContainer.style.setProperty('--dynamic-height', '0px');
+    requestAnimationFrame(() => {
+        sectionContainer.classList.remove('expanded');
+        sectionContainer.classList.add('collapsed');
+        titleContainer.classList.remove('expanded');
+        titleContainer.classList.add('collapsed');
+        titleContainer.onclick = () => expandSection(sectionId);
 
-    titleContainer.classList.remove('expanded');
-    titleContainer.classList.add('collapsed');
-    titleContainer.onclick = () => expandSection(sectionId);
-
-    arrow.classList.remove('expanded');
-    arrow.classList.add('collapsed');
+        arrow.classList.remove('expanded');
+        arrow.classList.add('collapsed');
+    });
 }
 
 

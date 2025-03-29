@@ -148,19 +148,35 @@ function collapseSection(sectionId) {
         sectionContainer.classList.add('collapsed');
         titleContainer.classList.remove('expanded');
         titleContainer.classList.add('collapsed');
-        titleContainer.onclick = () => expandSection(sectionId);
-
         arrow.classList.remove('expanded');
         arrow.classList.add('collapsed');
     });
+    titleContainer.onclick = () => expandSection(sectionId);
 }
 
-function collapseAllSections() {
+const reExpandSections = () => {
+    const sections = document.querySelectorAll('section');
+    sections.forEach(section => {
+        const sectionContainer = section.querySelector('.section-container');
+        if (sectionContainer.classList.contains('expanded')) {
+            console.log('collapse and expand section', section.id);
+            sectionContainer.style.transition = 'none';
+            collapseSection(section.id);
+            setTimeout(() => {
+                sectionContainer.style.transition = '';
+                expandSection(section.id);
+            }, 300);
+        }
+    });
+}
+
+const collapseAllSections = () => {
     const sections = document.querySelectorAll('section');
     sections.forEach(section => {
         collapseSection(section.id);
     });
 }
+
 
 // TODO implement virtual dom
 
@@ -215,38 +231,28 @@ function mount(vnode, container) {
     container.appendChild(render(vnode));
 }
 
-
-
-
-let resizeTimeout;
-let isMobile = window.innerWidth < 768;
-let lastWidth = window.innerWidth;
-
-
-
 // Example usage
 document.addEventListener('DOMContentLoaded', () => {
     console.log('DOM fully loaded and parsed');
     getContent().then(content => {
-        console.log('content loaded');
         loadContent(content);
-    
     });
-
     let breakPoint = 768;
     let lastWidth = window.innerWidth;
-    window.addEventListener('resize', () => {
-        clearTimeout(resizeTimeout);
-        const crossedBreakpoint = lastWidth < breakPoint && window.innerWidth >= breakPoint || lastWidth >= breakPoint && window.innerWidth < breakPoint;
-        lastWidth = window.innerWidth;
-        if (crossedBreakpoint) {
-            collapseAllSections();
-        }
-    });
-    
-    
 
-    
+    document.querySelector('h1').addEventListener('click', () => {
+        collapseAllSections();
+    });
+    window.addEventListener('resize', () => {
+        const currentWidth = window.innerWidth
+        const breakpointCrossed = lastWidth < breakPoint && currentWidth >= breakPoint || lastWidth >= breakPoint && currentWidth < breakPoint;
+        if (breakpointCrossed) {
+            console.log('breakpoint crossed');
+            reExpandSections();
+        }
+        lastWidth = currentWidth;
+    });
+        
     // Create a simple greeting element when button is clicked
     const button = document.createElement('button');
     button.textContent = 'Create Element with Virtual DOM';

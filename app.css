@@ -396,6 +396,7 @@ p {
 }
 
     h1 {
+    cursor: pointer;
     font-size: 3rem;
     padding: 20px 30px 15px 30px;
     border-bottom: 0.5px solid var(--white);

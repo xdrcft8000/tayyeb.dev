@@ -4,18 +4,16 @@ const linkIcon = `<svg class="item-title-link-icon" width="24" height="24" viewB
     <path fill-rule="evenodd" clip-rule="evenodd" d="M20.121 5.21326C21.5721 6.66442 21.5721 9.01722 20.121 10.4684L16.06 14.5293C14.5684 16.021 12.1499 16.021 10.6582 14.5293L9.6019 13.473L11.0161 12.0588L12.0724 13.1151C12.783 13.8257 13.9352 13.8257 14.6458 13.1151L18.7068 9.05417C19.3769 8.38405 19.3769 7.29759 18.7068 6.62747C18.0366 5.95736 16.9502 5.95736 16.2801 6.62747L14.6516 8.25598L13.2373 6.84176L14.8659 5.21326C16.317 3.7621 18.6698 3.7621 20.121 5.21326Z" fill="currentColor"/>
 </svg>`;
 
+
 async function getContent() {
     const response = await fetch('./content.json');
     const content = await response.json();
     return content;
 }
 
-// Simple Virtual DOM Example
 
-async function loadContent() {
+async function loadContent(content) {
     try {
-        const response = await fetch('./content.json');
-        const content = await response.json();
         
         const main = document.querySelector('main');
         content.sections.forEach(section => {
@@ -90,7 +88,8 @@ async function loadContent() {
                     itemImageContainer.classList.remove('item-image-container');
                     itemImageContainer.classList.add('item-image-container-inactive');
                 }else{
-                    itemTitleLink.innerHTML = itemTitleLink.innerHTML + linkIcon;
+                    const iconElement = document.createRange().createContextualFragment(linkIcon);
+                    itemTitleLink.appendChild(iconElement);
                 }
         
                 //item description
@@ -141,7 +140,7 @@ async function expandSection(sectionId) {
     titleContainer.onclick = () => collapseSection(sectionId);
 }
 
-async function collapseSection(sectionId) { 
+function collapseSection(sectionId) { 
     const section = document.querySelector(`#${sectionId}`);
     const sectionContainer = section.querySelector('.section-container');
     const titleContainer = section.querySelector('.section-title-container');

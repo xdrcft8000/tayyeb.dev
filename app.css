@@ -310,7 +310,7 @@ p {
 }
 
 .item-title-link:hover .item-title-link-icon {
-    filter: drop-shadow(var(--white-glow));
+    /* filter: drop-shadow(var(--white-glow)); */
 }
 
 .item-title-link:hover .item-title {

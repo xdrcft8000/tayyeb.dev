@@ -124,6 +124,9 @@ async function expandSection(sectionId) {
     const numberOfChildren = sectionContainer.children.length;
     const heightPerChild = 200; // Adjust this value based on your content height
     sectionContainer.style.setProperty('--dynamic-height', `${numberOfChildren * heightPerChild}px`);
+    const heightPerChildMobile = 700;
+    sectionContainer.style.setProperty('--dynamic-height-mobile', `${numberOfChildren * heightPerChildMobile}px`);
+
     titleContainer.classList.add('expanded');
     titleContainer.classList.remove('collapsed');
     arrow.classList.add('expanded');

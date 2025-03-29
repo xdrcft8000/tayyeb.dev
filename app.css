@@ -5,10 +5,11 @@
 
     /* Add Google Font Import */
     @import url('https://fonts.googleapis.com/css2?family=Handjet:wght@300;400;500;700&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Handjet:wght@300;400;500;700&display=swap&text=→'); /* Add the specific arrow character */
+    @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap');
     /* Add Font Family Variable */
     --handjet-font: 'Handjet', sans-serif;
+    --jetbrains-font: 'JetBrains Mono', monospace;
     --quicksand-font: 'Quicksand', sans-serif;
     --white: white;
     --black: black;
@@ -74,19 +75,19 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     padding: 20px 30px 15px 30px;
     border-bottom: 0.5px solid var(--white);
     display: flex;
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 400;
 }
 
 h3 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 400;
 }
 
@@ -236,7 +237,7 @@ p {
 .section-container.expanded {
     opacity: 1;
     height: auto;
-    max-height: var(--dynamic-height);
+    max-height: var(--dynamic-height-mobile);
     /* border: 5px solid var(--black); */
 }
 
@@ -248,9 +249,15 @@ p {
 
 .item-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 10px;
     padding: 20px;
+}
+
+.item-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .item-image-container:hover ~ .item-text-container .item-title {
@@ -262,10 +269,11 @@ p {
 }
 
 .item-image {
-    width: 150px;
-    height: 150px;
+    width: 300px;
+    height: 300px;
     border-radius: var(--image-border-radius);
     object-fit: cover;
+    margin: 0px 0px 20px 0px;
 }
 
 .item-text-container {
@@ -307,7 +315,10 @@ p {
 .item-tech-container {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
 .item-tech {
@@ -362,4 +373,57 @@ p {
     margin-top: var(--spacing-md);
     color: var(--text-color-lighter);
     font-style: italic;
+}
+
+
+
+
+
+
+@media screen and (min-width: 768px) {
+    h1 {
+    font-size: 3rem;
+    padding: 20px 30px 15px 30px;
+    border-bottom: 0.5px solid var(--white);
+    display: flex;
+    }
+
+    h2 {
+        font-size: 2rem;
+        font-weight: 400;
+    }
+
+    h3 {
+        font-size: 2rem;
+        font-weight: 400;
+    }
+
+    .section-container.expanded {
+    opacity: 1;
+    height: auto;
+    max-height: var(--dynamic-height);
+    /* border: 5px solid var(--black); */
+}
+
+    .item-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 20px;
+    }
+
+    .item-image {
+    width: 150px;
+    height: 150px;
+    border-radius: var(--image-border-radius);
+    object-fit: cover;
+    padding: 0px 0px 0px 0px;
+    }
+    .item-tech-container {
+        display: flex;
+        justify-content: start;
+        align-items: start;
+    }
+
+
 }

@@ -8,13 +8,13 @@
     @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap');
     /* Add Font Family Variable */
     --handjet-font: 'Handjet', sans-serif;
-    --jetbrains-font: 'JetBrains Mono', monospace;
     --quicksand-font: 'Quicksand', sans-serif;
-    --white: white;
-    --black: black;
+    
     /* Colors */
     --dark-grey: #1E1E1E;
     --light-grey:rgb(124, 124, 124);
+    --white: white;
+    --black: black;
     
     /* Spacing */
     --spacing-sm: 10px;
@@ -26,6 +26,7 @@
     --image-border-radius-mobile: 20px;
     --image-border-radius: 10px;
     --icon-border-radius: 5px;
+    --section-border-radius: 0px;
 
     /* Shadows */
     --white-glow: 0 0 10px rgba(255, 255, 255, 0.7);
@@ -174,6 +175,7 @@ p {
     flex-direction: row;
     gap: 10px;
     padding: 15px 10px 0px 20px;
+    border-radius: var(--section-border-radius);
     transition: background-color 0.1s ease;
 }
 
@@ -189,6 +191,7 @@ p {
 
 .section-title-container.expanded {
     background-color: var(--black);
+    border-radius: var(--section-border-radius) var(--section-border-radius) 0px 0px;
 }
 
 .section-title-container:hover {
@@ -225,11 +228,12 @@ p {
 .section-container {
     display: flex;
     flex-direction: column;
-    transition: transform 0.5s ease;
+    transition: transform 0.3s ease;
     overflow: hidden;
     position: relative;
     height: 0;
     will-change: height;
+    border-radius: 0px 0px 10px 10px;
     border: 0px solid var(--black);
     box-sizing: border-box;
     backface-visibility: hidden;

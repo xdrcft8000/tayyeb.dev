@@ -96,6 +96,7 @@ async function loadContent(content) {
                 const itemDescription = document.createElement('p');
                 itemDescription.textContent = item.description;
                 itemDescription.className = 'item-description';
+                itemDescription.classList.add('selectable-text');
                 itemTextContainer.appendChild(itemDescription);
         
                 //item tech
@@ -128,12 +129,12 @@ async function expandSection(sectionId) {
     const sectionHeight = sectionContainer.scrollHeight;
     sectionContainer.style.setProperty('--section-height', `${sectionHeight}px`);
     requestAnimationFrame(() => {
-        sectionContainer.classList.add('expanded');
         sectionContainer.classList.remove('collapsed');    
-        titleContainer.classList.add('expanded');
+        sectionContainer.classList.add('expanded');
         titleContainer.classList.remove('collapsed');
-        arrow.classList.add('expanded');
+        titleContainer.classList.add('expanded');
         arrow.classList.remove('collapsed');
+        arrow.classList.add('expanded');
     });
     titleContainer.onclick = () => collapseSection(sectionId);
 }
@@ -159,7 +160,6 @@ const reExpandSections = () => {
     sections.forEach(section => {
         const sectionContainer = section.querySelector('.section-container');
         if (sectionContainer.classList.contains('expanded')) {
-            console.log('collapse and expand section', section.id);
             sectionContainer.style.transition = 'none';
             collapseSection(section.id);
             setTimeout(() => {
@@ -233,7 +233,6 @@ function mount(vnode, container) {
 
 // Example usage
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('DOM fully loaded and parsed');
     getContent().then(content => {
         loadContent(content);
     });
@@ -247,7 +246,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const currentWidth = window.innerWidth
         const breakpointCrossed = lastWidth < breakPoint && currentWidth >= breakPoint || lastWidth >= breakPoint && currentWidth < breakPoint;
         if (breakpointCrossed) {
-            console.log('breakpoint crossed');
             reExpandSections();
         }
         lastWidth = currentWidth;

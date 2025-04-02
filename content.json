@@ -84,7 +84,7 @@
                 },
                 {
                     "title": "langchain-excel-loader",
-                    "description": "An Excel loader for Langchain that preserves document structure",
+                    "description": "An Excel document loader for Langchain that preserves structure.",
                     "link": "https://pypi.org/project/langchain-excel-loader/",
                     "image": "images/langchain.webp",
                     "technology": [

@@ -7,10 +7,12 @@
     @import url('https://fonts.googleapis.com/css2?family=Handjet:wght@300;400;500;700&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@200;300;400;500;700&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@300;400;500;600;700&display=swap');
     /* Add Font Family Variable */
     --handjet-font: 'Handjet', sans-serif;
     --quicksand-font: 'Quicksand', sans-serif;
     --heading-font: 'IBM Plex Mono', monospace;
+    --grotesk-font: 'Host Grotesk', sans-serif;
     
     /* Colors */
     --dark-grey: #1E1E1E;
@@ -98,11 +100,14 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 3rem;
     padding: 20px 30px 15px 30px;
     border-bottom: 0.5px solid var(--white);
     display: flex;
-    font-weight: 400;
+    font-weight: 300;
+    font-family: var(--grotesk-font);
+    letter-spacing: -0.07em;
+    italic
 }
 
 h2 {
@@ -439,7 +444,7 @@ p {
 
     h1 {
     cursor: pointer;
-    font-size: 3rem;
+    font-size: 4rem;
     padding: 20px 30px 15px 30px;
     border-bottom: 0.5px solid var(--white);
     display: flex;

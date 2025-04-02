@@ -200,7 +200,7 @@ p {
 
 .section-title-container:hover {
     background-color: var(--black);
-
+    box-shadow: inset 0 0 5px rgba(84, 52, 0, 0.5);
 }
 .section-title-container:hover h2 {
     text-shadow: var(--white-glow);
@@ -262,14 +262,15 @@ p {
 
 .section-container.expanded {
     transform: scaleY(1);
-    height: var(--section-height);
+    height: var(--section-height) + 25px;
     border: 5px solid var(--black);
-
+    margin: 0px 0px 5px 0px;
 }
 
 .section-container.collapsed {
     transform: scaleY(0);
     height: 0;
+    margin: 0px 0px 0px 0px;
 }
 
 .item-container {
@@ -288,6 +289,10 @@ p {
 
 .item-image-container:hover ~ .item-text-container .item-title {
     text-shadow: var(--white-glow);
+}
+
+.item-image-container:hover ~ .item-text-container .item-title-link-icon {
+    filter: drop-shadow(var(--white-glow));
 }
 
 .item-image-container-inactive{

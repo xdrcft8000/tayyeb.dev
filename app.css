@@ -169,7 +169,7 @@ p {
     fill: var(--light-grey);
 }
 
-.icon-container svg:hover {
+.icon-container:hover svg {
     fill: var(--white);
 }
 

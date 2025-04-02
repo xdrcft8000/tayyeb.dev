@@ -153,11 +153,12 @@ p {
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    transition: background-color 0.5s ease;
+    padding: 3px 3px 4px 3px;
+    transition: background-color 0.3s ease-out;
 }
 
 .icon-container:hover {
-    background-color: var(--light-grey);
+    background-color: var(--black);
 }
 
 .icon-container svg {
@@ -169,7 +170,7 @@ p {
 }
 
 .icon-container svg:hover {
-    fill: var(--dark-grey);
+    fill: var(--white);
 }
 
 

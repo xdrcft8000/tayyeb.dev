@@ -81,6 +81,22 @@
                             "link": "https://www.figma.com/"
                         }                            
                     ]
+                },
+                {
+                    "title": "langchain-excel-loader",
+                    "description": "An Excel loader for Langchain that preserves document structure",
+                    "link": "https://pypi.org/project/langchain-excel-loader/",
+                    "image": "images/langchain.webp",
+                    "technology": [
+                        {
+                            "name": "Python",
+                            "link": "https://www.python.org/"
+                        },
+                        {
+                            "name": "LangChain",
+                            "link": "https://www.langchain.com/"
+                        }
+                    ]
                 }
             ]
         },
@@ -166,7 +182,7 @@
                 },
                 {
                     "title": "heavystuf",
-                    "description": "'AI can be a force for good', the message of hope working through the designs on e-commerce T-Shirt project. It was build in pure js with minimal styling and no libraries or frameworks to show the beauty of raw technology. To encourage users to use the site consciously, common UX patterns were intentionally subverted in thoughtful ways.",
+                    "description": "'AI can be a force for good', the message of hope working through the designs on this e-commerce fashion project. It was build in pure js with minimal styling and no libraries or frameworks to show the beauty of raw technology. To encourage users to use the site consciously, common UX patterns were intentionally subverted.",
                     "link": "",
                     "image": "images/heavystuf2.webp",
                     "technology": [

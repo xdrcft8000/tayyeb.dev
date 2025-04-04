@@ -182,7 +182,7 @@
                 },
                 {
                     "title": "heavystuf",
-                    "description": "'AI can be a force for good', the message of hope working through the designs on this e-commerce fashion project. It was build in pure js with minimal styling and no libraries or frameworks to show the beauty of raw technology. To encourage users to use the site consciously, common UX patterns were intentionally subverted.",
+                    "description": "'AI can be a force for good', the message of hope working through the designs on this e-commerce fashion project. The intententionally stripped down frontend used no libraries or frameworks, just pure JS. To encourage users to use the site consciously, common UX patterns were intentionally subverted.",
                     "link": "",
                     "image": "images/heavystuf2.webp",
                     "technology": [

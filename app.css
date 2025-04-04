@@ -101,7 +101,7 @@ h1, h2, h3 {
 
 h1 {
     font-size: 3rem;
-    padding: 20px 30px 15px 30px;
+    padding: 20px 0px 15px 0px;
     border-bottom: 0.5px solid var(--white);
     display: flex;
     font-weight: 300;
@@ -446,8 +446,6 @@ p {
     h1 {
     cursor: pointer;
     font-size: 4rem;
-    padding: 20px 30px 15px 30px;
-    border-bottom: 0.5px solid var(--white);
     display: flex;
     }
 

@@ -187,7 +187,7 @@
                     "image": "images/heavystuf2.webp",
                     "technology": [
                         {
-                            "name": "javascript",
+                            "name": "JavaScript",
                             "link": "https://www.javascript.com/"
                         },
                         {
@@ -195,7 +195,7 @@
                             "link": "https://www.python.org/"
                         },
                         {
-                            "name": "django",
+                            "name": "Django",
                             "link": "https://www.djangoproject.com/"
                         },
                         {
@@ -203,7 +203,7 @@
                             "link": "https://stripe.com/"
                         },
                         {
-                            "name": "heroku",
+                            "name": "HEROKU",
                             "link": "https://www.heroku.com/"
                         }
                     ]

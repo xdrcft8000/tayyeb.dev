@@ -23,6 +23,10 @@
                             "link": "https://www.python.org/"
                         },
                         {
+                            "name": "FastAPI",
+                            "link": "https://fastapi.tiangolo.com/"
+                        },
+                        {
                             "name": "Vercel",
                             "link": "https://vercel.com/"
                         },
